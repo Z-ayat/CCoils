@@ -1,3 +1,4 @@
+/* Start Globalizaion */
 * {
     padding: 0;
     margin: 0;
@@ -6,21 +7,24 @@
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     position: relative;
     height: 100%;
 }
 
+/* End Globalizaion */
+
 /* template Design */
 .landing {
-    height: calc(100vh - 66px);
+    height: calc(100vh - 130px);
 }
 
-/* Demo Carousel */
+/* Start Swiper.js Slider */
 
 .swiper {
     width: 100%;
     height: 100%;
+    background-color: #292929;
 }
 
 .swiper-slide {
@@ -51,8 +55,65 @@ body {
     object-fit: cover;
 }
 
-/* Customize website's scrollbar like Mac OS
-Not supports in Firefox and IE */
+.swiper-button-next,
+.swiper-button-prev::after {
+    color: rgba(255, 255, 255, 0.548);
+}
+
+/* End Swiper.js Slider */
+/* Start Sliders Design */
+.slider-text-wrapper {
+    position: absolute;
+    z-index: 1;
+    background-color: hsla(0, 0%, 16%, 0.315);
+    width: 50%;
+    height: 100px;
+    bottom: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* End Sliders Design */
+
+/* Start Product list Section */
+.HOS {
+    padding: 8px 20px;
+    margin: 70px auto;
+    width: max-content;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.HOS::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 150px;
+    height: 2px;
+    background-color: #292929;
+
+}
+
+.HOS::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom: -9px;
+    background-color: #fff;
+    border: 2px solid #292929;
+    border-radius: 100%;
+}
+
+/* End Product list Section */
+
+/* Start MacOS Scrollbar */
 
 /* total width */
 body::-webkit-scrollbar {
@@ -76,3 +137,5 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
     display: none;
 }
+
+/* End MacOS Scrollbar */
